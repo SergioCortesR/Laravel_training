@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Test</title>
 </head>
 
 <body>
-    <h1>Bienvenido</h1>
-    <a href="/contacto">Contacto</a>
-    <br>
-    <a href=" {{ route('contacto') }} ">Ruta con nombre</a>
+    <h1>
+        <?php echo $msj2 ?>
+        <?= $msj2 ?> 
+        {{$msj2}}
+    </h1>
+<h3>Edad: {{$edad}} </h3>
+
+
 </body>
 
 </html>
