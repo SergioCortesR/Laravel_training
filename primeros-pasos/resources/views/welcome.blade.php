@@ -9,10 +9,15 @@
 </head>
 
 <body>
-    <h1>Bienvenido</h1>
+    {{--  <h1>Bienvenido</h1>
     <a href="/contacto">Contacto</a>
     <br>
     <a href=" {{ route('contacto') }} ">Ruta con nombre</a>
+    <br>  --}}
+    
+    {{--  Nombre:  --}} {{$user}}
+    
+
 </body>
 
 </html>
