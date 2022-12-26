@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\dashboard;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class testController extends Controller
@@ -15,7 +16,10 @@ class testController extends Controller
     {
         //echo "Hola mundo desde el index de testController";
         //Dentro del controlador la mandamos argumentos a la vista
-        return view("index",['name' => 'Sergio','age' => '21','html' => '<h1> Este es un titulo </h1>','array' => [1,2,3,4,'Checo']]);
+        //return view("dashboard.test.index",['name' => 'Sergio','age' => '21','html' => '<h1> Este es un titulo </h1>','array' => [1,2,3,4,'Checo']]);
+
+        $posts = [1, 2, 3, 4, 'Checo'];
+        return view("dashboard.test.index",compact('posts'));
     }
 
     /**
