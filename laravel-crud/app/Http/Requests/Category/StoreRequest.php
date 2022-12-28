@@ -21,11 +21,7 @@ class StoreRequest extends FormRequest
             "slug" => "required|min:5|max:500|unique:posts"
         ];
     }
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
+    
     public function authorize()
     {
         return true;
