@@ -26,6 +26,11 @@ class CategoryController extends Controller
         return view('dashboard.category.index', ['categories' => $categories]);
     }
 
+    /* public function new($id)
+    {
+        
+    } */
+
     /**
      * Show the form for creating a new resource.
      *
